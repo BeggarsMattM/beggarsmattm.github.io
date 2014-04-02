@@ -1,0 +1,10 @@
+language: php
+php:
+  - 5.5
+script: phpunit --configuration phpunit.xml
+deploy:
+  provider: s3
+  access_key_id: "AKIAIUNFAMLW5GXTX5QQ"
+  secret_access_key: "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"
+  bucket: "mtm.beggars.com"
+  skip_cleanup: true
